@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  /* position: absolute;
+  right: 20px; */
+  font-weight: 700;
+  margin: 0 auto;
+
+  width: 1200px;
+  padding: 10px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  /* background: #eda4a4; */
+  display: flex;
+  gap: 25px;
+}
+
+.person-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+/* food  */
+
+.food-showcase {
+  display: flex;
+  gap: 18rem;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid darkblue; */
+}
+
+.image img {
+  width: 300px;
+  border-radius: 50%;
+  padding: px;
+}
+
+/* food info */
+.food-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.food-info h1 {
+  font-size: 3.5rem;
+}
+.price-order {
+  color: red;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.food-info button {
+  background: #333;
+  color: white;
+  padding: 5px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.food-showcase::before {
+  content: " ";
+  background: #1c1b1b;
+  width: 23%;
+  height: 56vh;
+  position: absolute;
+  top: 0;
+  left: 10.5rem;
+  z-index: -1;
+}
+
+.food-items {
+  margin-left: 200px;
+  margin-right: 50px;
+  padding: 10px;
+  /* border: 4px solid darkblue; */
+  display: flex;
+  gap: 20px;
+}
+
+.single-item {
+  background-color: #1f2321;
+  width: 23%;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.item-image {
+  display: flex;
+  gap: 2rem;
+}
+
+.item-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.foodcard-info {
+  margin: 20px 10px;
+  font-weight: 600;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.item-footer {
+  background: #bebebd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  border-radius: 4px;
+  color: black;
+}
+
+.add-cart img {
+  width: 20px;
+  height: 20px;
+}
+.add-cart:hover {
+  cursor: pointer;
+}
