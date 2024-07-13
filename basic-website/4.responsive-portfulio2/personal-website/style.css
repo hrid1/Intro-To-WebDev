@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  max-width: 1380px;
+  /* height: 90vh; */
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+}
+
+.btn-primary {
+  border-radius: 4px;
+  background: rgb(244, 96, 96);
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+/* -----------------------common end--------------------------- */
+
+.navlist {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: end;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.navlist > li {
+  list-style: none;
+}
+/* -------------------navbar end-------------------- */
+
+.hello-section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  /* border: 1px solid black; */
+  padding: 4rem;
+}
+.info-div1 {
+  width: 45%;
+  /* border: 1px solid gray; */
+}
+
+.info-div1 > h1 {
+  font-size: 4.5rem;
+}
+.info-div1 > p {
+  color: rgb(62, 62, 62);
+  margin-bottom: 1.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+}
+
+.img-div1 {
+  width: 40%;
+  /* border: 5px solid burlywood; */
+
+  position: relative;
+}
+
+/* --------------projects section --------------------------*/
+
+.project-container{
+    /* height: 600px; */
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background: #c7adad;
+    padding: 50px 0px;
+    
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.projects-section {
+  /* border: 2px solid blue; */
+  padding: 2rem;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.single-project {
+  width: 24rem;
+  /* border: 4px solid lightblue; */
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.project-info {
+  margin-top: 1rem;
+}
+/* .single-project > div{
+   width: 320px;
+} */
+
+/* ___________________Responsive______Design______________________ */
+
+@media screen and (max-width: 560px) {
+  .navlist {
+    justify-content: center;
+  }
+  .hello-section {
+    flex-direction: column;
+  }
+
+  .img-div1,
+  .info-div1 {
+    width: 100%;
+  }
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+/* footer */
+
+.footer-section{
+    margin: 10px auto;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+}
+.all-logos{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.all-logos > div{
+    width: 40px;
+}
+
+.footer-section > h3{
+    margin: 10px 0;
+    color: gray;
+}
